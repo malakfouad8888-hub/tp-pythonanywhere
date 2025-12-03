@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de Citations</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>✨ Générateur de citations ✨</h1>
+
+        <div class="quote-box">
+            <p>{{ quote }}</p>
+        </div>
+
+        <a href="/" class="btn">Nouvelle citation</a>
+
+        <form action="/add" method="POST" class="add-form">
+            <input type="text" name="quote" placeholder="Ajouter une citation..." required>
+            <button type="submit">Ajouter</button>
+        </form>
+    </div>
+
+</body>
+</html>
